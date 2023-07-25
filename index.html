@@ -9,8 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <style>
     .my-lato{font-family: 'Lato', sans-serif;}
    </style>
@@ -22,6 +24,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'nav-bg-color':'#F85559',
+                'my-white':'#FFF;',
+
               }
             }
           }
@@ -31,6 +36,40 @@
 </head>
 <body class="my-lato">
     <header>
+        <nav class="max-w-screen-lg mx-auto">
+            <div class="navbar lg:bg-nav-bg-color rounded-r-full rounded-l-full">
+                <div class="navbar-start hidden lg:flex text-my-white font-semibold">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="text-5xl text-my-white font-bold">
+                    <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-xl text-black">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden sm:block bg-white p-2 rounded-full">
+                        <input  type="text" class="" placeholder="Search here" class="w-24 md:w-auto" /><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <div class="dropdown">
+                      <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">                
+                      </ul>
+                    </div>
+                    
+                  </div>
+              </div>
+        </nav>
+        <!--Slider Section-->
+        
     </header>
     <main>
 
